@@ -14,8 +14,6 @@
 #define MOVEMENT  2
 #define EXTRAS    3
 
-&out OUT_BLE
-
 &mt {
   flavor = "tap-preferred";
    // tapping_term_ms = <200>;

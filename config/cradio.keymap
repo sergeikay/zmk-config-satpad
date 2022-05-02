@@ -87,9 +87,9 @@
 		
 		      MOVEMENT {
 		        bindings = <
-		          &kp TAB         &kp F2      &none       &none     &kp F12    			&kp ESC   &kp HOME  &kp UP    &kp END     &kp BACKSPACE 
-		          &kp LC(A)       &kp LC(S)   &none       &none     &none 			    &kp LSHFT &kp LEFT  &kp DOWN  &kp RIGHT   &kp ENTER
-		          &kp LC(Z)       &kp LC(X)   &kp LC(C)   &kp LC(V) &kp LC(Y)    		&kp LCTRL &none     &none     &none       &kp DEL
+		          &kp TAB         &kp F2      &none       &none     &kp F12    			&kp ESC   &kp HOME    &kp UP    &kp END     &kp BACKSPACE 
+		          &kp LC(A)       &kp LC(S)   &none       &none     &none 			    &kp LSHFT &kp LEFT    &kp DOWN  &kp RIGHT   &kp ENTER
+		          &kp LC(Z)       &kp LC(X)   &kp LC(C)   &kp LC(V) &kp LC(Y)    		&kp LCTRL &kp C_PREV  &kp C_PP  &kp C_NEXT       &kp DEL
 					                                            &none     &none  				  &none     &kp F24
 		        >;
 		      };

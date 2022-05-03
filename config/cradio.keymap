@@ -98,7 +98,7 @@
 		          &none   &none   &none   &none   &none    		&none   &none     &none     &none       &none 
 		          &none   &none   &none   &none   &none 			&none   &none     &none     &none       &none
 		          &none   &none   &none   &none   &none    		&none   &none     &none     &none       &none
-					                      &bt BT_PRV &bt BT_NXT      &none   &none
+					                      &bt BT_PRV &bt BT_NXT      &bt BT_CLR   &none
 		        >;
 		      };
 	};

@@ -1,0 +1,8 @@
+file_format: "1"
+id: chocbar
+name: Chocbar
+type: shield
+url: https://kb.hazel.cc
+requires: [seeed_xiao]
+features: 
+  - keys

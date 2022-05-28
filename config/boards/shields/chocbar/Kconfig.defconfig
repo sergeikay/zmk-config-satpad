@@ -1,0 +1,4 @@
+if SHIELD_CHOCBAR
+  config ZMK_KEYBOARD_NAME
+    default "Chocbar"
+endif

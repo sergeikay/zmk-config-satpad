@@ -1,0 +1,4 @@
+if SHIELD_MINISAT
+config ZMK_KEYBOARD_NAME
+  default "minisat"
+endif

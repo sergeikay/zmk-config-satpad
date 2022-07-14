@@ -1,0 +1,8 @@
+file_format: "1"
+id: minisat
+name: minisat
+type: shield
+url: https://github.com/jasonhazel/minisat
+requires: [seeeduino_xiao]
+features:
+  - keys

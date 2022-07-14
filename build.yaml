@@ -14,4 +14,4 @@
 ---
 include:
   - board:  seeeduino_xiao
-    shield: chocbar
+    shield: minisat

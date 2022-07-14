@@ -1,5 +1,1 @@
 #include "minisat.dtsi"
-
-&center_encoder {
-  status = "okay";
-};

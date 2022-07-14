@@ -3,6 +3,6 @@ id: minisat
 name: minisat
 type: shield
 url: https://github.com/jasonhazel/minisat
-requires: [seeeduino_xiao]
+requires: [pro_micro]
 features:
   - keys

@@ -1,0 +1,9 @@
+a# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_SATPAD
+
+config ZMK_KEYBOARD_NAME
+    default "SatPad"
+
+endif

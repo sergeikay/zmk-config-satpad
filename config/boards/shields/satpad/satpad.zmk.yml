@@ -1,8 +1,8 @@
 file_format: "1"
-id: minisat
-name: minisat
+id: satpad
+name: SatPad
 type: shield
-url: https://github.com/jasonhazel/minisat
+url: https://github.com/jasonhazel/satpad
 requires: [pro_micro]
 features:
   - keys

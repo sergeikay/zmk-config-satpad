@@ -6,3 +6,4 @@ url: https://github.com/jasonhazel/satpad
 requires: [pro_micro]
 features:
   - keys
+  - encoder

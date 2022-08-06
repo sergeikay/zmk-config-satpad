@@ -17,8 +17,9 @@
                 &kp A    &kp S    &kp D     &kp F     &kp G     &none     &kp H     &kp J     &kp K     &kp L     &kp SEMI
                 &kp Z    &kp X    &kp C     &kp V     &kp B     &kp SPC   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH
             >;
+            sensor-bindings = <&inc_dec_kp UP C_DOWN>;
         };
     };
 
-    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+    
 };

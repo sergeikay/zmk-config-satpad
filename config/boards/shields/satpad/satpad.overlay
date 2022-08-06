@@ -47,4 +47,12 @@
             RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(6,5) RC(5,4) RC(5,3) RC(5,2) RC(5,1) RC(5,0)
         >;
     };    
+
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        label = "LEFT_ENCODER";
+        a-gpios = <PIN_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <PIN_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+    };
 };

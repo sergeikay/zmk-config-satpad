@@ -1,2 +1,0 @@
-config SHIELD_MINISAT
-  def_bool $(shields_list_contains, minisat)

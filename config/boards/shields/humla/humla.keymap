@@ -97,7 +97,7 @@
             bindings = <
                 &tdq    &kp W          &kp E       &kp R       &kp T        &kp Y     &kp U            &kp I     &kp O    &kp P
                 &kp A   &kp S          &kp D       &kp F       &kp G        &kp H     &kp J            &kp K     &kp L    &kp SQT
-                &kp Z   &hrm X LGUI   &kp C       &kp V       &kp B        &kp N     &kp M            &kp COMMA &kp DOT  &kp SLASH
+                &kp Z   &hrm LGUI X   &kp C       &kp V       &kp B        &kp N     &kp M            &kp COMMA &kp DOT  &kp SLASH
                                 &kp LCTRL   &sl SYMBOL &skq LSHIFT     &kp SPACE &lt NUMBER BSPC  &kp RET
             >;
         };
@@ -123,7 +123,7 @@
         NAVIGATION_layer {
             bindings = <
                 &none           &kp F2          &out OUT_USB    &out OUT_BLE    &bt BT_CLR      &none       &kp HOME    &kp UP      &kp END     &kp BSPC 
-                &kp TAB         &none           &bt BT_SEL 0    &bt BT_SEL 1    &none           &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp RET
+                &kp TAB         &none           &bt BT_SEL 0    &bt BT_SEL 1          &none           &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp RET
                 &none           &none           &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none       &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp DEL    
                                                 &trans          &trans          &trans          &trans      &trans      &trans
             >;

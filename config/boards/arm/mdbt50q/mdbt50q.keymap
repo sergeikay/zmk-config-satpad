@@ -20,8 +20,9 @@
     keymap {
   		compatible = "zmk,keymap";
 
-		base_layer {
-			bindings = < &bootloader >;
+		  base_layer {
+			  bindings = < &bootloader >;
+      };
     };
+  };
 
-};

@@ -13,4 +13,9 @@
 #
 ---
 include:
+<<<<<<< HEAD
   - board: mdbt50q
+=======
+  - board:  nice_nano_v2
+    shield: humla
+>>>>>>> jmnw/humla

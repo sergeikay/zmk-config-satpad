@@ -7,17 +7,16 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-
-#define BASE
-
 / {
-
     keymap {
-  		compatible = "zmk,keymap";
+        compatible = "zmk,keymap";
 
-		  base_layer {
-			  bindings = < &bootloader >;
-      };
+        default_layer {
+            bindings = <
+               &bootloader
+            >;
+        };
     };
-  };
 
+    
+};

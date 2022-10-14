@@ -8,7 +8,7 @@
 
 &xiao_serial { status = "disabled"; };
 
-$xiao_spi {
+&xiao_spi {
     status = "okay";
     cx-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>;
     shifter: 595@0 {

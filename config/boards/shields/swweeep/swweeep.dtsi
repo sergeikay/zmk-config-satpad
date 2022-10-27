@@ -40,8 +40,6 @@
             , <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio1 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            ,
-
             , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>

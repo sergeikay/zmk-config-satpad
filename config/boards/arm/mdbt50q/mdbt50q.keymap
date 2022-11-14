@@ -9,8 +9,6 @@
 
 
 #define BASE
-#define EXTRA_L 3
-
 &sl {
   release-after-ms = <60000>;
 };

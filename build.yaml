@@ -17,8 +17,8 @@ include:
   #   shield: humla
   # - board:  nice_nano_v2
   #   shield: bad_wings
-  - board: nice_nano_v2
-    shield: settings_reset
-  - board: nice_nano_v2
-    shield: crepe
-  
+  # - board: nice_nano_v2
+  #   shield: settings_reset
+  # - board: nice_nano_v2
+  #   shield: crepe
+  - board: mdbt50q

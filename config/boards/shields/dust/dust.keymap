@@ -19,6 +19,10 @@
     tapping_term_ms = <180>;
 };
 
+&lt {
+    tapping_term_ms = <150>;
+};
+
 / {
     behaviors {
         tdq: tap_dance_qesc {
@@ -74,26 +78,12 @@
            compatible = "zmk,behavior-hold-tap";
            label = "homerow_mods";
            #binding-cells = <2>;
-           tapping-term-ms = <200>;
+           tapping-term-ms = <250>;
            quick-tap-ms = <0>;
            flavor = "tap-preferred";
            bindings = <&kp>, <&kp>;
 
         };
-    };
-
-    combos {
-      compatible = "zmk,combos";
-      cmb_symb {
-        timeout-ms = <50>;
-        key-positions = <30 31>;
-        bindings = <&sl SYMBOL>;
-      };
-      cmb_ent {
-        timeout-ms = <50>;
-        key-positions = <32 33>;
-        bindings = <&kp RET>;
-      };
     };
 
     conditional_layers {
@@ -109,10 +99,10 @@
 
         ALPHA_layer {
             bindings = <
-                &tdq    &kp W           &kp E     &kp R       &kp T        &kp Y     &kp U            &kp I     &kp O    &kp P
-                &kp A   &kp S           &kp D     &kp F       &kp G        &kp H     &kp J            &kp K     &kp L    &kp SQT
-                &kp Z   &hrm LGUI X     &kp C     &kp V       &kp B        &kp N     &kp M            &kp COMMA &kp DOT  &kp SLASH
-                                                  &kp LCTRL   &skq LSHIFT  &kp SPACE &lt NUMBER BSPC
+                &tdq    &kp W           &kp E       &kp R       &kp T        &kp Y     &kp U            &kp I     &kp O    &kp P
+                &kp A   &kp S           &kp D       &kp F       &kp G        &kp H     &kp J            &kp K     &kp L    &kp SQT
+                &kp Z   &hrm LGUI X     &kp C       &kp V       &kp B        &kp N     &kp M            &kp COMMA &kp DOT  &kp SLASH
+                                        &kp LCTRL   &sl SYMBOL  &skq LSHIFT  &kp SPACE &lt NUMBER BSPC  &kp RET
             >;
         };
 
@@ -120,8 +110,8 @@
             bindings = <
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp PIPE    &none
                 &kp GRAVE   &kp TILDE   &kp UNDER   &kp EQUAL   &none       &bkt        &brc        &par        &thn        &kp BSLH
-                &out OUT_BLE       &none       &kp PLUS    &kp MINUS   &none       &none       &none       &kp COLON   &trans     &kp SEMI
-                                             &trans      &trans      &trans      &trans      
+                &none       &none       &kp PLUS    &kp MINUS   &none       &none       &none       &kp COLON   &trans     &kp SEMI
+                                        &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
 
@@ -130,16 +120,16 @@
                 &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
                 &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
                 &none       &none       &none       &none       &none       &none       &none       &none       &trans      &none
-                                              &trans      &trans      &trans      &trans      
+                                        &trans      &trans      &trans      &trans      &trans      &trans
             >;
         };
 
         NAVIGATION_layer {
             bindings = <
                 &none           &kp F2          &out OUT_USB    &out OUT_BLE    &bt BT_CLR      &none       &kp HOME    &kp UP      &kp END     &kp BSPC 
-                &kp TAB         &none           &bt BT_SEL 0    &bt BT_SEL 1          &none           &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp RET
+                &kp TAB         &none           &bt BT_SEL 0    &bt BT_SEL 1    &none           &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp RET
                 &none           &none           &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none       &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp DEL    
-                                                          &trans          &trans          &trans      &trans     
+                                                &trans          &trans          &trans          &trans      &trans      &trans
             >;
         };
     };

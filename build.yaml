@@ -14,12 +14,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: skytoucher_left
-  - board: seeeduino_xiao_ble
-    shield: skytoucher_right
-  - board: seeeduino_xiao_ble
-    shield: dust_left
-  - board: seeeduino_xiao_ble
-    shield: dust_right
-  - board: seeeduino_xiao_ble
     shield: bad_wings

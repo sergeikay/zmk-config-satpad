@@ -24,6 +24,16 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <0 9>;
+            bindings = <&bootloader>;
+            layers = <3>;
+        };
+    };
+
     behaviors {
         tdq: tap_dance_qesc {
             compatible = "zmk,behavior-tap-dance";

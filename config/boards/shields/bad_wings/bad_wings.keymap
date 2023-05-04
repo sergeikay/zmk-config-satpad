@@ -75,7 +75,7 @@
             bindings = <&kp LT>, <&kp GT>;
         };
 
-        kp: sticky_quick {
+        skq: sticky_quick {
             compatible = "zmk,behavior-sticky-key";
             label = "sticky_quick";
             #binding-cells = <1>;

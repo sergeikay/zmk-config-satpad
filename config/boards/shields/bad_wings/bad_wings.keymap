@@ -35,6 +35,13 @@
     };
 
     behaviors {
+        dance: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance";
+            #binding-cells = <2>;
+            tapp-term-md = <200>;
+            bindings = <&kp>, <&kp>;
+        };
         tdq: tap_dance_qesc {
             compatible = "zmk,behavior-tap-dance";
             label = "tap_dance_qesc";
@@ -43,44 +50,12 @@
             bindings = <&kp Q>, <&kp ESC>;
         };
 
-        bkt: tap_dance_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_bracket";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LBKT>, <&kp RBKT>;
-        };
-
-        brc: tap_dance_brace {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_braces";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LBRC>, <&kp RBRC>;
-        };
-
-        par: tap_dance_paren {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_paren";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LPAR>, <&kp RPAR>;
-        };
-
-        thn: tap_dance_then {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tap_dance_then";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LT>, <&kp GT>;
-        };
-
         skq: sticky_quick {
             compatible = "zmk,behavior-sticky-key";
             label = "sticky_quick";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <1000>;
+            release-after-ms = <250>;
             quick-release;
         };
 
@@ -111,15 +86,15 @@
             bindings = <
                 &tdq    &kp W           &kp E       &kp R       &kp T        &kp Y     &kp U            &kp I     &kp O    &kp P
                 &kp A   &kp S           &kp D       &kp F       &kp G        &kp H     &kp J            &kp K     &kp L    &kp SQT
-                &kp Z   &hrm LGUI X     &kp C       &kp V       &kp B        &kp N     &kp M            &kp COMMA &kp DOT  &kp SLASH
-                                        &kp LCTRL   &sl SYMBOL  &kp LSHIFT  &kp SPACE &lt NUMBER BSPC  &kp RET
+                &kp Z   &hrm LGUI X     &hrm LALT C       &kp V       &kp B        &kp N     &kp M            &kp COMMA &kp DOT  &kp SLASH
+                                        &kp LCTRL   &sl SYMBOL  &skq LSHIFT  &kp SPACE &lt NUMBER BSPC  &kp RET
             >;
         };
 
         SYMBOL_layer {
             bindings = <
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp PIPE    &none
-                &kp GRAVE   &kp TILDE   &kp UNDER   &kp EQUAL   &none       &bkt        &brc        &par        &thn        &kp BSLH
+                &kp GRAVE   &kp TILDE   &kp UNDER   &kp EQUAL   &none       &dance LBKT RBKT        &dance LBRC RBRC        &dance LPAR RPAR        &dance LT GT        &kp BSLH
                 &none       &none       &kp PLUS    &kp MINUS   &none       &none       &none       &kp COLON   &trans     &kp SEMI
                                         &trans      &trans      &trans      &trans      &trans      &trans
             >;

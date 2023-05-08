@@ -16,4 +16,4 @@ include:
   - board: seeeduino_xiao_ble
     shield: bad_wings
   - board: seeeduino_xiao_rp2040
-    shielf: bad_wings
+    shield: bad_wings

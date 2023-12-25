@@ -1,8 +1,0 @@
-file_format: "1"
-id: bad_wings
-name: Bad Wings
-type: shield
-url: https://github.com/jasonhazel/bad_wings
-requires: [seeed_xiao]
-features:
-  - keys

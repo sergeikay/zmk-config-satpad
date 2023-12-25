@@ -53,9 +53,9 @@
         // ----------------------------------------------------------------------------------------------------------------
         layer_1 {
             bindings = <
-                &kp Q    &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &kp T     &none     &kp Y     &kp U     &kp I     &kp O     &kp P   
-                &kp A    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp G     &none     &kp H     &kp J     &kp K     &kp L     &kp SEMI
-                &kp Z    &kp X          &kp C          &kp V           &kp B     &kp SPC   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH
+                &kp Q    &mkp LCLK  &kp E     &mkp RCLK   &kp T     &none     &kp Y     &kp U     &kp I     &kp O     &kp P   
+                &kp A    &kp S      &kp D     &kp F       &kp G     &none     &kp H     &kp J     &kp K     &kp L     &kp SEMI
+                &kp Z    &kp X      &kp C     &kp V       &kp B     &kp SPC   &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };

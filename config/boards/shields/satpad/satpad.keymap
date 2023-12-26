@@ -49,6 +49,13 @@
             bindings = <&kp LBRC>, <&kp RBRC>;
         };
 
+        td_GRTL: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+        };
+
     };
 
 /* 
@@ -97,9 +104,9 @@
         //-----------------------------------------------------------------------------------------------------------------
         layer_2 {
             bindings = <
-                &td_BKT    &kp W     &kp E     &kp R     &kp LA(F4) &none     &kp F1    &kp F2    &kp F3    &kp F4    &kp F5
-                &td_PAR    &kp X     &kp X     &kp X     &kp X      &none     &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
-                &td_BRC    &kp X     &kp C     &kp V     &trans     &kp C_PP  &kp F11   &kp F12   &kp LC(C) &kp LC(V) &kp LC(X)
+                &td_BKT    &td_GRTL   &kp NUBS  &kp PIPE  &kp SLASH  &none     &kp F1    &kp F2    &kp F3    &kp F4    &kp F5
+                &td_PAR    &kp EQUAL  &kp PLUS  &kp MINUS &kp UNDER  &none     &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
+                &td_BRC    &kp LA(F4) &kp C     &kp V     &trans     &kp C_PP  &kp F11   &kp F12   &kp LC(C) &kp LC(V) &kp LC(X)
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };

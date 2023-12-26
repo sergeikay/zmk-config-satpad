@@ -31,28 +31,28 @@
         td_BKT: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
             bindings = <&kp LBKT>, <&kp RBKT>;
         };
 
         td_PAR: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
 
         td_BRC: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
             bindings = <&kp LBRC>, <&kp RBRC>;
         };
 
         td_GRTL: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <350>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
         };
 
@@ -71,11 +71,11 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(space, &kp SPC, 18 19)
-        COMBO(backspace, &kp BSPC, 8 18)
-        COMBO(escape, &kp ESC, 0  1)
-        COMBO(enter, &kp ENTER, 31 32)
-        COMBO(tab, &kp TAB, 11 12)
+        COMBO(space,     &kp SPC,     18 19)
+        COMBO(backspace, &kp BSPC,     8 18)
+        COMBO(escape,    &kp ESC,      0  1)
+        COMBO(enter,     &kp ENTER,   31 32)
+        COMBO(tab,       &kp TAB,     11 12)
     };
 
     keymap {

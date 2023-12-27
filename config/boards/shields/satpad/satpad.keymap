@@ -73,8 +73,9 @@
 
         COMBO(space,     &kp SPC,     18 19)
         COMBO(escape,    &kp ESC,      0  1)
-        COMBO(enter,     &kp ENTER,   31 32)
+        COMBO(enter,     &kp ENTER,   20 21)
         COMBO(tab,       &kp TAB,     11 12)
+        COMBO(caps,      &kp CAPS,     0 11)
         COMBO(backspace, &kp BSPC,     8 18)
         COMBO(delete,    &kp DEL,      9 18)
     };
